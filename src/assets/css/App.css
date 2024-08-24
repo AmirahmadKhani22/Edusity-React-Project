@@ -1,0 +1,7 @@
+@import url('./common/global.css');
+@import url('./errorboundry.css');
+@import url('./components/nav.css');
+@import url('./components/header.css');
+@import url('./components/main.css');
+@import url('./components/footer.css');
+@import url("./components/responsive.css");

@@ -1,0 +1,42 @@
+.main-container {
+    --title-color: #000f38;
+    --title-size: 35px;
+    --title-text-transform: capitalize;
+    --title-align: center;
+    --title-des-between-space: 10px;
+    --title-des-size: 16px;
+    --title-des-text-transform: uppercase;
+    --title-margin-bottom: 80px;
+    --betwwen-parts-space: 100px;
+    --horizontal-padding: 4%;
+    width: 80%;
+    margin: 70px auto var(--betwwen-parts-space);
+    padding: 0 var(--horizontal-padding);
+}
+.main-part {
+    margin-bottom: var(--betwwen-parts-space);
+}
+.main-title-container {
+    color: var(--primery-color);
+    text-align: var(--title-align);
+    text-transform: var(--title-des-text-transform);
+    margin-bottom: var(--title-margin-bottom);
+}
+.main-title-description {
+    font-size: var(--title-des-size);
+}
+.main-title {
+    color: var(--title-color);
+    font-size: var(--title-size);
+    text-transform: var(--title-text-transform);
+    margin-top: var(--title-des-between-space);
+}
+.main-gallery {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main-gallery-item {
+    overflow: hidden;
+    border-radius: 10px;
+}

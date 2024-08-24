@@ -1,0 +1,72 @@
+#testimonials {
+    margin: 0 -8% var(--betwwen-parts-space);
+}
+#testimonials .slider-container {
+    padding: 0 8%;
+    position: relative;
+}
+#testimonials-swiper {
+    overflow: hidden;
+    padding: 20px 0;
+    width: 100%;
+    height: 100%;
+    line-height: 1.4;
+    position: relative;
+}
+#testimonials .slider-container .previous-btn , #testimonials .slider-container .next-btn {
+    --size: 50px;
+    background-color: var(--primery-color);
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    position: absolute;
+    top: calc(50% - var(--size) / 2);
+    z-index: 2;
+}
+#testimonials .slider-container .previous-btn {
+    left: 0;
+}
+#testimonials .slider-container .next-btn {
+    right: 0;
+}
+#testimonials-swiper .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: content-box;
+    transform: translateX(0);
+    transition-property: transform;
+    transition-timing-function: ease;
+}
+#testimonials-swiper .slide {
+    align-self: stretch;
+    flex-shrink: 0;
+    box-shadow: 0 0 20px #0000000d;
+    color: var(--secondry-color);
+    padding: 40px;
+    border-radius: 10px;
+}
+#testimonials .student {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+    margin-bottom: 20px;
+}
+#testimonials .student .profile {
+    width: 65px;
+    height: 65px;
+    border: 4px solid var(--primery-color);
+    border-radius: 50%;
+    overflow: hidden;
+}
+#testimonials .student .profile img {
+    height: 100%;
+}
+#testimonials .student .short-info h4 {
+    color: var(--primery-color);
+    font-size: 18px;
+}
+#testimonials .student .short-info p {
+    font-size: 15px;
+    color: var(--secondry-color);
+}

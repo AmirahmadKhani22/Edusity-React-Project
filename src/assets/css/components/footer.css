@@ -1,0 +1,16 @@
+.footer-container , .footer-working-conditions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-container {
+    padding: 15px 0;
+    margin: 10px 10% 0;
+    border-top: 1px solid  #797979;
+}
+.footer-working-conditions {
+    gap: 20px;
+}
+.footer-working-conditions-item {
+    color: #000;
+}

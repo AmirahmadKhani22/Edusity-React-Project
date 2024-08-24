@@ -1,0 +1,143 @@
+@media screen and (max-width: 1200px) {
+    .nav-container {
+        padding: 10px 5%;
+    }
+    .default-nav-menu {
+        column-gap: 30px;
+    }
+    .nav-logo {
+        width: 140px;
+    }
+    .header-content-container {
+        padding: 0 5%;
+    }
+    #about-us {
+        --info-flex: 1;
+        --column-gap: 0;
+        --row-gap: 30px;
+        flex-direction: column;
+    }
+    #about-us .video-container .poster {
+        width: 52%;
+    }
+    #about-us .main-title-container {
+        text-align: center; 
+    }
+    #about-us .main-title {
+        max-width: 100%; 
+    }
+    .footer-container {
+        margin: 10px 5% 0;
+    }
+}
+@media screen and (max-width: 1100px) {
+    #about-us .video-container .poster {
+        width: 65%;
+    }
+    #campus .main-gallery {
+        flex-wrap: wrap;
+        gap: 25px 0;
+    }
+    #campus .main-gallery-item {
+        flex-basis: 48%;
+    }
+}
+@media screen and (max-width: 1000px) {
+    #program .main-gallery {
+        flex-direction: column;
+        margin: 0 16%;
+        gap: 20px 0;
+    }
+}
+@media screen and (max-width: 840px) {
+    .nav-logo {
+        width: 180px;
+    }
+    .nav-shutter-menu-button {
+        display: inline-block;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+    .nav-shutter-menu-button-icon {
+        width: 30px;
+    }
+    .shutter-nav-menu-container {
+        display: block;
+        position: absolute;
+        right: -200px;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+        background-color: #141f80;
+        height: 100vh;
+        width: 200px;
+        padding: 70px 20px;
+        transition: right .4s ease;
+    }
+    .show-shutter-nav-menu-container {
+        right: 0;
+    }
+    .shutter-nav-menu {
+        margin: 0;
+        flex-direction: column;
+        row-gap: 25px;
+    }
+    .header-title {
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .main-container {
+        --title-margin-bottom: 45px;
+        --betwwen-parts-space: 50px;
+        padding: 0;
+    }
+    .main-part {
+        margin-bottom: var(--betwwen-parts-space);
+    }
+    .main-title-container {
+        margin-bottom: var(--title-margin-bottom);
+    }
+    #about-us .video-container .poster {
+        width: 70%;
+    }
+    #campus .see-more {
+        margin-top: 25px;
+        text-align: center;
+    }
+    #testimonials {
+        margin: 0 0 var(--betwwen-parts-space);
+        padding: 0;
+    }
+    #testimonials .student .description {
+        text-align: justify;
+    }
+    #contact-us .info , #contact-us form {
+        grid-column: 1/3;
+    }
+    #contact-us form {
+        margin-top: 40px;
+    }
+    #contact-us .info p {
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 561px) {
+    .header-title {
+        font-size: 30px;
+    }
+    .header-description {
+        font-size: 15px;
+    }
+    .main-container {
+        width: 90%;
+    }
+    .footer-container {
+        flex-direction: column;
+    }
+    .footer-working-conditions {
+        margin-top: 20px;
+    }
+}

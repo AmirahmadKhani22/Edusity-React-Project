@@ -1,0 +1,78 @@
+#about-us {
+    --video-flex: 1;
+    --info-flex: 1.5;
+    --column-gap: 4%;
+    --row-gap: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--row-gap) var(--column-gap);
+}
+#about-us .main-title-container {
+    margin-bottom: 10px;
+    text-align: left; 
+}
+#about-us .main-title {
+    max-width: 450px; 
+}
+#about-us .video-container {
+    flex: var(--video-flex);
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#about-us .video-container .poster {
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+#about-us .video-container .poster img {
+    width: 100%;
+    vertical-align: middle;
+}
+#about-us .video-container .poster button {
+    --size: 60px;
+    background: url('./../../../icons/play.svg');
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: calc(50% - var(--size) / 2);
+    left: calc(50% - var(--size) / 2);
+    z-index: 1;
+    transition: .3s;
+}
+#about-us .video-container .poster button:hover {
+    background-color: #000f98;
+}
+#about-us .video-container .video-wrapper {
+    background-color: rgba(0 , 0 , 0 , 0.75);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#about-us .video-container .video-wrapper video {
+    border: 3px solid #f2f2f2;
+    border-radius: 15px;
+    width: 87%;
+    height: 80vh;
+    object-fit: cover;
+}
+#about-us .info {
+    flex: var(--info-flex);
+}
+#about-us .info p {
+    color: #676767;
+    margin: 10px 0 15px;
+}
+#about-us .info p:last-child {
+    margin-bottom: 0;
+}

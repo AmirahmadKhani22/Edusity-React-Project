@@ -1,0 +1,22 @@
+#campus .main-gallery-item {
+    flex-basis: 23%;
+}
+#campus .see-more {
+    margin-top: 40px;
+    text-align: center;
+}
+#campus .see-more .link {
+    display: inline-block;
+    background-color: var(--primery-color);
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 35px;
+    font-size: 16px;
+}
+#campus .see-more .link .content {
+    display: flex;
+    align-items: center;
+}
+#campus .see-more .link .icon {
+    margin-left: 10px;
+}

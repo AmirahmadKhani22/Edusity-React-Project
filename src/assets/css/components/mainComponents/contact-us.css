@@ -1,0 +1,83 @@
+#contact-us {
+    --icon-gap: 10px;
+    --part-gap: 15px;
+    --form-input-color: #ebecfe;
+    --text-color: #676767;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4%;
+}
+#contact-us .main-title-container {
+    grid-column: 1/3;
+}
+#contact-us .info {
+    grid-column: 1;
+    color: #676767;
+}
+#contact-us .info .title {
+    color: var(--title-color);
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+#contact-us .info .title img {
+    width: 35px;
+    margin-left: 10px;
+}
+#contact-us .info .title i {
+    margin-left: var(--icon-gap);
+}
+#contact-us .info p {
+    text-align: justify;
+    max-width: 450px;
+    margin-bottom: var(--part-gap);
+}
+#contact-us .info ul {
+    padding: 0;
+}
+#contact-us .info ul li {
+    display: flex;
+    align-items: center;
+    gap: 0 var(--icon-gap);
+}
+#contact-us .info ul li:nth-child(2) {
+    margin: var(--part-gap) 0;
+}
+#contact-us .info ul li .icon-container {
+    width: 35px;
+    height: 35px;
+}
+#contact-us-form {
+    grid-column: 2;
+}
+#contact-us-form label , #contact-us-form input , #contact-us-form textarea {
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+#contact-us-form label {
+    color: var(--text-color);
+}
+#contact-us-form input , #contact-us-form textarea {
+    background-color: var(--form-input-color);
+    padding: 15px;
+    margin: 5px 0 15px;
+}
+#contact-us-form #recaptcha {
+    width: 100%;
+    overflow-x: scroll;
+    margin: 10px 0 13px;
+}
+#contact-us-form .submit-container button {
+    background-color: var(--primery-color);
+    padding: 15px 25px;
+    border-radius: 25px;
+    font-size: 16px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+#contact-us-form .submit-container .icon {
+    margin-left: 10px;
+}
